@@ -1,0 +1,53 @@
+*{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        overflow-x: hidden;
+    }
+
+
+#barra-superior{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#logo-menu{
+    width: 100px;
+    height: 100px;
+}
+
+ul li{
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 10px;
+    ;
+}
+
+h1{
+    background-color: rgb(209, 20, 77);
+    color: white;
+    font-size: 64px;
+}
+
+h3{
+    background-image: linear-gradient( to right , rgb(211, 0, 70), rgb(240, 164, 0));
+    color: white;
+}
+
+h1{
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 2;
+
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
