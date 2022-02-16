@@ -2,33 +2,44 @@
 <html lang="es">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- mi CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <title>Inicio</title>
+
 </head>
 
 <body>
+    <!-- para dar tamaño a las pantallas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <div id="main">
         <!-- Parte Superior -->
         <div id="barra-superior">
-            <header class="rowFlex";>
-                <!--logo superior izquierdo-->
-                <a href="index.html" ><img id="logo-menu" src="images/logo aurum.png"
-                    alt="logo-inicio"></a>
-
-                <nav id="menu">
-                    <ul class="navFlex">
-                        <li class="lista" class="navFlex__item1"> <a href="index.html">Inicio</a></li>
-                        <li class="lista" class="navFlex__item2"> <a href="pages/servicio.html"> Servicios</a></li>
-                        <li class="lista" class="navFlex__item3"> <a href="pages/bio.html"> Bio</a></li>
-                        <li class="lista" class="navFlex__item4"> <a href="pages/clientes.html"> Clientes</a></li>
-                        <li class="lista" class="navFlex__item5"> <a href="pages/contacto.html"> Contacto</a></li>
-                    </ul>
-                </nav>
+            <header class="rowFlex">
+                <div class="container-fluid">
+                    <nav id="menu" class="navbar navbar-expand-md navbar-dark fixed-top bg-white">
+                        <!--logo superior izquierdo-->
+                        <a class="navbar-brand" href="index.html">logo<img id="logo-menu" src="images/logo aurum.png"
+                                alt="logo-inicio"></a>
+                        <ul class="navFlex">
+                            <li class="lista" class="navFlex__item1"> <a href="index.html">Inicio</a></li>
+                            <li class="lista" class="navFlex__item2"> <a href="pages/servicio.html"> Servicios</a></li>
+                            <li class="lista" class="navFlex__item3"> <a href="pages/bio.html"> Bio</a></li>
+                            <li class="lista" class="navFlex__item4"> <a href="pages/clientes.html"> Clientes</a></li>
+                            <li class="lista" class="navFlex__item5"> <a href="pages/contacto.html"> Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
-
+            <br><br><br><br><br>
         </div>
 
         <!-- Centro de inicio (portada y parrafo)-->
@@ -50,20 +61,30 @@
         <div id="redes-sociales">
             <!--texto centro, abajo logos-->
             <h2 id="texto-redes">Seguinos en nuestras redes</h2>
-            <a href="https://www.facebook.com/aurum.mkt" target="blanck"><img id="logo-facebook" src="images/logo facebook.png"
-                    alt="logo-facebook"></a>
+            <a href="https://www.facebook.com/aurum.mkt" target="blanck"><img id="logo-facebook"
+                    src="images/logo facebook.png" alt="logo-facebook"></a>
             <a href="https://instagram.com/aurum.marketing" target="_blanck"><img id="logo-instagram"
                     src="images/logo instagram.png" alt="logo-instagram"></a>
             <a href=""><img id="logo-email" src="images/logo email.png" alt="logo-email"> </a>
         </div>
 
-        <div id="pie-de-pagina">
-            <!--al ultimo y centrado-->
-            <footer>
-                <p> Todos los derechos reservados para Aurum Marketing en colaboracion con Agustina Herrera </p>
-            </footer>
-        </div>
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-end"><a href="#">Aurum Marketing</a></p>
+            <p>&copy; 2022 Company, Inc. &middot; Aurum Marketing en colaboración con Agustina Herrera <a
+                    href="#">Volver Arriba</a></p>
+        </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
